@@ -2,8 +2,8 @@
 #include <WebServer.h>
 
 // WiFi Credentials
-const char* ssid = "OnePlus 10R 5G";
-const char* password = "Gogol123";
+const char* ssid = "*********";
+const char* password = "******";
 
 WebServer server(80);
 
