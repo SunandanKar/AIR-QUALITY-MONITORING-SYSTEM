@@ -22,7 +22,7 @@ AQMS is an IoT-powered air quality monitoring system that tracks multiple enviro
 - MQ135 (Air Quality Sensor)
 - MQ4 (Methane Sensor)
 - DHT11 (Temperature & Humidity)
-- PMS5003 (Particulate Matter Sensor)
+- RTC (Real Time Clock)
 
 ## 📊 Data Flow Architecture
 
