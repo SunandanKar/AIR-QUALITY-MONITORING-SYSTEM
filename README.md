@@ -34,9 +34,10 @@ graph TD
     D --> E[User Devices]
 ```
 
-# 🖥️ Dashboard Preview (Version 2) #
+## 🖥️ Dashboard Preview (Version 2) ##
 
-![Image](https://github.com/user-attachments/assets/40e6c401-10d6-41a8-9d87-e69a91e9857c)
+![Dashboard_Image](https://github.com/user-attachments/assets/c2e31a46-2a9c-433d-ab82-af9ca3aa1e35)
+
 
 
 **Key UI Elements:**
