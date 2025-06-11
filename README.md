@@ -34,6 +34,11 @@ graph TD
     D --> E[User Devices]
 ```
 
+# 🖥️ Dashboard Preview (Version 2) #
+
+![Image](https://github.com/user-attachments/assets/40e6c401-10d6-41a8-9d87-e69a91e9857c)
+
+
 **Key UI Elements:**
 - Live gauge-style metrics
 - Historical data table (date/time separated)
@@ -69,6 +74,7 @@ graph TD
 | Lead Developer                 | Sunandan Kar         | Sensor integration & PCB design       |
 | Database & Network Management  | Sweta Poddar         | Data visualization & Analytics        |
 | Software Architect             | Swarnavo Pramanik    | ESP32 firmware & Web Dashboard        |
+
 
 ## 🌱 Future Enhancements
 - [ ] Add push notifications for poor air quality
