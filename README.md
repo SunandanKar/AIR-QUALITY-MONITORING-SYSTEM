@@ -64,11 +64,11 @@ graph TD
 
 ## 👥 Development Team
 
-| Role               | Team Member          | Contribution                          |
-|--------------------|----------------------|---------------------------------------|
-| Lead Developer     | Sunandan Kar         | Sensor integration & PCB design        |
-| Hardware Specialist| Sweta Poddar         | ESP32 firmware & Web Dashboard       |
-| Data Analyst       | Swarnavo Pramanik    | Data visualization & Analytics        |
+| Role                           | Team Member          | Contribution                          |
+|--------------------------------|----------------------|---------------------------------------|
+| Lead Developer                 | Sunandan Kar         | Sensor integration & PCB design       |
+| Database & Network Management  | Sweta Poddar         | Data visualization & Analytics        |
+| Software Architect             | Swarnavo Pramanik    | ESP32 firmware & Web Dashboard        |
 
 ## 🌱 Future Enhancements
 - [ ] Add push notifications for poor air quality
