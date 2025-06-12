@@ -36,7 +36,8 @@ graph TD
 
 ## 🖥️ Dashboard Preview (Version 2) ##
 
-![Dashboard_Image](https://github.com/user-attachments/assets/c2e31a46-2a9c-433d-ab82-af9ca3aa1e35)
+
+![192 168 10 106_](https://github.com/user-attachments/assets/a79655d1-9074-421f-b8a2-89f1a09ca67c)
 
 
 
