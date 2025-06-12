@@ -40,6 +40,23 @@ void loop() {
   int mq135_raw = analogRead(MQ135_PIN);
   int mq4_raw = analogRead(MQ4_PIN);
 
+  int cal_mq135 = 0;
+  int cal_mq4 = 0;
+
+  if (mq135_raw < 200){
+    cal_mq135 = 0;
+  }
+  else{
+    cal_mq135 = mq135_raw - 200;
+  }
+
+  if (mq4_raw < 260){
+    cal_mq4 = 0;
+  }
+  else{
+    cal_mq4 = mq4_raw - 260;
+  }
+
   delay(100);  // Stabilize readings
 
   // Display sensor values
@@ -52,28 +69,28 @@ void loop() {
   Serial.print(" %, ");
 
   Serial.print("AQI (MQ135): ");
-  Serial.print(mq135_raw);
+  Serial.print(cal_mq135);
   Serial.print(", ");
 
-  Serial.print("Methane (MQ4 ppm): ");
-  Serial.println(mq4_raw);
+  Serial.print("Methane (MQ4 ppm): ");  
+  Serial.println(cal_mq4);
 
   delay(3000); // Delay between readings
 }
 
 // Placeholder to manually set RTC time (customize this function)
 void setRTC() {
-  // Example: Set to 11 June 2025, 15:30:00
-  Wire.beginTransmission(RTC_ADDRESS);
-  Wire.write(0x04); // Set starting register (time)
-  Wire.write(decToBcd(00));    // Seconds
-  Wire.write(decToBcd(00));   // Minutes
-  Wire.write(decToBcd(18));   // Hours
-  Wire.write(decToBcd(11));   // Day
-  Wire.write(decToBcd(3));    // Weekday (0-6)
-  Wire.write(decToBcd(6));    // Month
-  Wire.write(decToBcd(25));   // Year (last two digits of 2025)
-  Wire.endTransmission();
+  // // Example: Set to 11 June 2025, 15:30:00
+  // Wire.beginTransmission(RTC_ADDRESS);
+  // Wire.write(0x04); // Set starting register (time)
+  // Wire.write(decToBcd(00));    // Seconds
+  // Wire.write(decToBcd(59));   // Minutes
+  // Wire.write(decToBcd(12));   // Hours
+  // Wire.write(decToBcd(12));   // Day
+  // Wire.write(decToBcd(3));    // Weekday (0-6)
+  // Wire.write(decToBcd(6));    // Month
+  // Wire.write(decToBcd(25));   // Year (last two digits of 2025)
+  // Wire.endTransmission();
 }
 
 void readRTC() {
